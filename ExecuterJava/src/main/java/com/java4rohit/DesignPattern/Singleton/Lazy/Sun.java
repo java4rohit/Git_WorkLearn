@@ -17,9 +17,8 @@ public class Sun implements Serializable, Cloneable {
     }
 
     public static Sun getSun() {
-        if (sun == null) {
-            System.out.println(Thread.currentThread().getName());
-            synchronized (Sun.class) {
+        if(sun == null) {
+           synchronized (Sun.class) {
                 if (sun == null) {
                     sun = new Sun();
                 }
