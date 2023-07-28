@@ -7,26 +7,19 @@ import java.lang.reflect.InvocationTargetException;
 public class TestSingleton {
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, IOException, ClassNotFoundException, CloneNotSupportedException {
-
   /*
      Break SingleTon Design patter
-
            0. In MultiThreaded Env...
            1.Problem: Reflection API to Break singleton pattern
            2.Solution:if Object is there -> throw exception from inside constructor
            3.Solution:Use Enum
-
   */
         Sun s1 = Sun.getSun();
         System.out.println("S1 hashCode "+s1.hashCode());
 // 3.break singleton using cloneable
-
         Sun s2 = (Sun) s1.clone();
         System.out.println("Clone break single Or nor"+s2.hashCode());
-
-
 /*
-
  // 1. First Way to Break Singleton using Reflection
 
         Constructor<Sun> constructor = Sun.class.getDeclaredConstructor();
