@@ -4,11 +4,20 @@
 
 
 
+Creational->
+  BUILDER DESIGN PATTERN::
+  ------------------------
 
-Builder Design Pattern:
-:while creating object when object contains may attribute are many problem:
+   While creating object when object contains may attribute are many problem:
 
-    1.We have to pass many argument to create Object.
-    2.Some parameter might be optional
-    3.factory class takes all responsibility for creating object .if object is heavy then all the complexity  is the part of factory  class.
+    * We have to pass many argument to create Object.
+    * Some parameter might be optional
+    * Factory class takes all responsibility for creating object .if object is heavy then all the complexity  is the part of factory  class.
   So  in builder pattern  be create object  step by step and finally return final object with desired  value of attribute.
+  Behavioural->
+  OBSERVER DESIGN PATTERN::
+  ---------------------------
+
+  * It is behavioural Design Pattern.
+  * In this when Subject is changed the state all its dependent object notified the change.
+  * One to many relation.
