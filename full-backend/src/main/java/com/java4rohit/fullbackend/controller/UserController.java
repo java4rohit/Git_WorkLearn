@@ -24,7 +24,7 @@ public class UserController {
 	/*
 	Save the  User.
 	 */
-	@PostMapping(value = "/saveUser", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/saveUser", produces = MediaType.APPLICATION_XML_VALUE)
 	public ResponseEntity<User> saveUser(@RequestBody User user) {
 		User userSave = userService.saveUser(user);
 		return new ResponseEntity<User>(userSave != null ? HttpStatus.OK : HttpStatus.NO_CONTENT);
