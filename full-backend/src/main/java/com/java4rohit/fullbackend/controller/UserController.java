@@ -28,7 +28,6 @@ public class UserController {
 	public ResponseEntity<User> saveUser(@RequestBody User user) {
 		User userSave = userService.saveUser(user);
 		return new ResponseEntity<User>(userSave != null ? HttpStatus.OK : HttpStatus.NO_CONTENT);
-
 	}
 	/*
 	Save the List of User.
